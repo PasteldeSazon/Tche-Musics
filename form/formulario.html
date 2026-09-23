@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="formulario.css" />
+  <link rel="stylesheet" href="../assets/styles/estilo.css" />
+  <title>Formulário</title>
+</head>
+
+<body>
+    <header class="meu-cabecalho">
+      <h1>Tche Musics - Uma &aacute;udio biblioteca bem ga&uacute;cha</h1>
+    </header>
+    <nav class="menu-links">
+      <ul>
+        <li><a href="../index.html">P&aacute;gina principal</a></li>
+        <li>
+          <a href="../pages/paginas/documenta&ccedil;&atilde;o.html">Documenta&ccedil;&atilde;o do Site</a>
+        </li>
+        <li><a href="../pages/paginas/sobre n&oacute;s.html">Sobre n&oacute;s</a></li>
+        <li>
+          <a href="../pages/paginas/ferramentas utilizadas.html">Ferramentas Utilizadas</a>
+        </li>
+        <li>
+          <a href="../pages/biografias/Home biografias.html">Biografias dos Cantores</a>
+        </li>
+        <li><a href="../form/formulario.html">Preencha este formul&aacute;rio</a></li>
+        <li><a href="../pages/paginas/favoritos.html">Sua Playlist</a></li>
+      </ul>
+    </nav>
+  <main class="formulario-container">
+    <div class="moldura">
+      <form>
+        <div class="itens">
+          <label for="nome">Seu nome</label>
+          <input type="text" id="nome" name="nome" />
+          <br />
+          <span id="erroNome" class="formulario-erro"></span>
+          <br>
+          <label for="email">Seu email</label>
+          <input type="email" id="email" name="email" />
+          <br />
+          <span id="emailErro" class="formulario-erro"></span>
+          <br>
+          <label for="tipo-musica">Qual seu estilo musical favorito?</label>
+          <br />
+          <select name="tipo-musica" id="tipo-musica">
+            <option value="Música Gaúcha">Música Gaúcha</option>
+            <option value="Sertanejo">Sertanejo</option>
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="Funk">Funk</option>
+            <option value="Rap/Trap">Rap/Trap</option>
+            <option value="Pagóde">Pagóde</option>
+            <option value="Outro">Outro</option>
+          </select>
+          <br />
+          <div class="radio">
+            <label>Você já conhecia a música gaúcha antes de visitar o
+              site?</label>
+            <br />
+            <input type="radio" name="conhecia" id="conhecia-sim" value="Sim" />
+            <label for="conhecia-sim">Sim</label>
+            <br />
+            <input type="radio" name="conhecia" id="conhecia-nao" value="Não" />
+            <label for="conhecia-nao">Não</label>
+          </div>
+          <br />
+
+          <label for="cantor-gosto">Qual cantor ou grupo gaúcho você mais gosta?</label>
+          <br />
+          <input type="text" id="cantor-gosto" name="cantor-gosto" />
+          <br />
+          <label for="artista-adicionar">Qual artista você gostaria de ver adicionado ao site?</label>
+          <br />
+          <input type="text" id="artista-adicionar" name="artista-adicionar" />
+          <br />
+          <label for="musica-gostou">Qual música do site você mais gostou?</label>
+          <br />
+          <select name="musica-gostou" id="musica-gostou">
+            <optgroup label="Selecione uma opção">
+              <option value="A Volta do Tordilho Negro">
+                A Volta do Tordilho Negro
+              </option>
+              <option value="As Coisas do Meu Rincão">
+                As Coisas do Meu Rincão
+              </option>
+              <option value="Brasil de Bombacha">Brasil de Bombacha</option>
+              <option value="Castração a Pealo">Castração a Pealo</option>
+              <option value="Coração de Luto">Coração de Luto</option>
+              <option value="De Freio e Pelego na Mão">
+                De Freio e Pelego na Mão
+              </option>
+              <option value="Do Fundo da Grota">Do Fundo da Grota</option>
+              <option value="Não é de Hoje">Não é de Hoje</option>
+              <option value="Querência Amada">Querência Amada</option>
+              <option value="Saudades da Minha Terra (Versão Teixeirinha)">
+                Saudades da Minha Terra (Versão Teixeirinha)
+              </option>
+              <option value="Tordilho Negro">Tordilho Negro</option>
+              <option value="Tropeiro Velho">Tropeiro Velho</option>
+            </optgroup>
+          </select>
+          <br />
+          <label for="gaucha-favorita">Qual sua música gaúcha favorita?</label>
+          <br />
+          <input type="text" id="gaucha-favorita" name="gaucha-favorita" />
+          <br />
+          <label for="gaucha-recomendo">Qual música você recomendaria para outras pessoas?</label>
+          <br />
+          <input type="text" id="gaucha-recomendo" name="gaucha-recomendo" />
+          <br />
+          <div class="radio">
+            <span>Você mora no Rio Grande do Sul?</span>
+            <br />
+            <input type="radio" name="moradia" id="moradia-sim" value="Sim" />
+            <label for="moradia-sim">Sim</label>
+            <br />
+            <input type="radio" name="moradia" id="moradia-nao" value="Não" />
+            <label for="moradia-nao">Não</label>
+          </div>
+          <br />
+          <div class="radio">
+            <span>Participa de CTG? (Centro de Tradições Gaúchas)</span>
+            <br />
+            <input type="radio" name="ctg" id="ctg-sim" value="Sim" />
+            <label for="ctg-sim">Sim</label>
+            <br />
+            <input type="radio" name="ctg" id="ctg-nao" value="Não" />
+            <label for="ctg-nao">Não</label>
+          </div>
+          <br />
+
+          <div class="radio">
+            <span>Já foi a algum rodeio ou festival tradicionalista?</span>
+            <br />
+            <input type="radio" name="festival" id="festival-sim" value="Sim" />
+            <label for="festival-sim">Sim</label>
+            <br />
+            <input type="radio" name="festival" id="festival-nao" value="Não" />
+            <label for="festival-nao">Não</label>
+          </div>
+          <br />
+
+          <span>Qual aspecto da cultura gaúcha mais gosta?</span>
+          <br />
+          <div class="checkbox-group">
+            <label class="checkbox-item"><input type="checkbox" name="musica" id="musica" value="musica" />
+              Música</label>
+            <label class="checkbox-item"><input type="checkbox" name="danca" id="danca" value="danca" /> Dança</label>
+            <label class="checkbox-item"><input type="checkbox" name="churrasco" id="churrasco" value="churrasco" />
+              Churrasco</label>
+            <label class="checkbox-item"><input type="checkbox" name="tradicoes" id="tradicoes" value="tradicoes" />
+              Tradições</label>
+            <label class="checkbox-item"><input type="checkbox" name="historia" id="historia" value="historia" />
+              História</label>
+            <label class="checkbox-item"><input type="checkbox" name="vestimenta" id="vestimenta" value="vestimenta" />
+              Vestimenta</label>
+          </div>
+
+          <br />
+          <div class="radio">
+            <span>O conteúdo foi fácil de navegar?</span>
+            <br />
+            <input type="radio" name="facil" id="facil-sim" value="Sim" />
+            <label for="facil-sim">Sim</label>
+            <br />
+            <input type="radio" name="facil" id="facil-nao" value="Não" />
+            <label for="facil-nao">Não</label>
+          </div>
+          <br />
+          <div class="radio">
+            <span>Encontrou a música que procurava?</span>
+            <br />
+            <input type="radio" name="encontrar" id="encontrar-sim" value="Sim" />
+            <label for="encontrar-sim">Sim</label>
+            <br />
+            <input type="radio" name="encontrar" id="encontrar-nao" value="Não" />
+            <label for="encontrar-nao">Não</label>
+          </div>
+          <br />
+
+          <label for="adicionar">Que músicas deveriam ser adicionadas?</label>
+          <input type="text" id="adicionar" name="adicionar" />
+          <br />
+          <label for="novas-biografias">Que cantores deveriam ganhar uma biografia?</label>
+          <input type="text" id="novas-biografias" name="novas-biografias" />
+          <br />
+          <label for="melhorar">O que pode melhorar no site?</label>
+          <br />
+          <textarea name="melhorar" id="melhorar"></textarea>
+          <br />
+          <label for="musica-marcante">Qual música gaúcha marcou sua vida e por quê?</label>
+          <br />
+          <textarea name="musica-marcante" id="musica-marcante"></textarea>
+          <br />
+          <label for="musica-unica">Se você pudesse recomendar apenas uma música gaúcha para alguém
+            que nunca ouviu o gênero, qual seria?</label>
+          <br />
+          <input type="text" id="musica-unica" name="musica-unica" />
+          <br /><br />
+
+          <button type="submit">Enviar Formulário</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="rodape-divisao">
+    <div class="coluna">
+      <h4>Contato:</h4>
+      <address>
+        Email:
+        <a href="mailto:passosgabriel2022@gmail.com">passosgabriel2022@gmail.com</a>
+        <br /><br />
+        Contato WhatsApp:
+        <a href="tel:+55 (53) 999528115">+55 (53) 999528115</a>
+      </address>
+    </div>
+
+    <div class="coluna">
+      <h4>Saiba mais sobre o RS</h4>
+      <p>
+        <a href="../enciclopedia/Todo-Rio-Grande-Do-Sul.html">CLIQUE AQUI PARA ACESSAR UMA ENCICLOPEDIA COMPLETA SOBRE ESTE
+          LINDO
+          ESTADO!!!!.</a>
+      </p>
+    </div>
+
+    <div class="coluna">
+      <h4>Consulte esses outros conteúdos a parte</h4>
+      <p>
+        <a href="https://github.io">Meu primeiro site, ou também uma biografia</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Vinculação correta do arquivo JS -->
+  <script src="formulario.js"></script>
+</body>
+
+</html>

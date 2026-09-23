@@ -1,116 +1,86 @@
-# 🌐 Site Trabalho Escola
+# Tchê Musics
 
-Projeto escolar desenvolvido utilizando **HTML, CSS e JavaScript**, com o objetivo de apresentar conteúdos de forma visual, organizada e acessível através de um site publicado online.
+Tchê Musics é uma biblioteca digital de músicas gaúchas criada para um projeto
+escolar. O site reúne letras, áudios, capas, biografias de artistas e textos
+explicando o significado de cada música.
 
-## 📌 Sobre o Projeto
+## Funcionalidades
 
-Este site foi criado como parte de um trabalho escolar, buscando unir tecnologia, criatividade e aprendizado em um único projeto.
+- Catálogo com 22 músicas gaúchas.
+- Busca por título ou artista.
+- Ordenação por artista, nome e popularidade.
+- Páginas individuais com letra, capa e reprodutor de áudio.
+- Páginas com o significado das letras.
+- Lista de favoritos salva no navegador.
+- Páginas sobre artistas, documentação, ferramentas e o Rio Grande do Sul.
+- Navegação responsiva para telas menores.
 
-Além de servir como apresentação do conteúdo proposto, o projeto também teve como foco o desenvolvimento de habilidades em programação web e organização de informações.
+## Tecnologias
 
-O site foi publicado utilizando o **GitHub Pages**, permitindo acesso público diretamente pelo navegador.
+- HTML5
+- CSS3
+- JavaScript com módulos ES
+- `localStorage` para favoritos
+- GitHub Pages para publicação
 
----
+## Estrutura
 
-## 🚀 Tecnologias Utilizadas
-
-* HTML5
-* CSS3
-* JavaScript
-* GitHub Pages
-
----
-
-## 🎯 Objetivos do Projeto
-
-* Desenvolver um site funcional para apresentação escolar
-* Praticar desenvolvimento web
-* Aprender estruturação de páginas
-* Melhorar conhecimentos em estilização
-* Trabalhar lógica básica com JavaScript
-* Publicar um projeto real na internet
-
----
-
-## ✨ Funcionalidades
-
-* ✅ Navegação entre páginas
-* ✅ Interface organizada
-* ✅ Conteúdo informativo
-* ✅ Estrutura simples e intuitiva
-* ✅ Site publicado online
-* ✅ Compatibilidade com navegadores modernos
-
----
-
-## 🔗 Acesse o Projeto
-
-O site pode ser acessado através do link abaixo:
-
-```txt
-https://pasteldesazon.github.io/Site-trabalho-escola/
-```
-
----
-
-## 📂 Estrutura do Projeto
-
-```bash
-Site-trabalho-escola/
-│
+```text
+Tche-musics/
 ├── index.html
-├── style.css
-├── script.js
 ├── assets/
+│   ├── media/
+│   │   ├── audios/
+│   │   └── imagens/
+│   ├── scripts/
+│   │   ├── data/musicas.js
+│   │   ├── favoritos.js
+│   │   ├── filtros.js
+│   │   ├── localStorage.js
+│   │   └── ui.js
+│   └── styles/estilo.css
+├── enciclopedia/
+├── form/
+├── pages/
+│   ├── biografias/
+│   ├── letras/
+│   ├── paginas/
+│   └── significados-letras/
+├── outros/
 └── README.md
 ```
 
----
+As músicas são cadastradas em `assets/scripts/data/musicas.js`. Cada registro
+define o título, artista, capa, áudio e link para a página da letra.
 
-## ▶️ Como Executar Localmente
+## Como executar
 
-1. Clone este repositório:
+A forma mais facil é clonando o repositório via terminal (forma que eu uso que é mais facil):
+- Vá no seu EXPLORADOR DE ARQUIVOS
+- Selecione a pasta ou espaço em que vai clonar o projeto
+- Clique com o botão direito e ache "abrir com terminal"
+- No terminal execute o seguinte código
 
-```bash
-git clone https://github.com/PasteldeSazon/Site-trabalho-escola.git
-```
+``` git clone https://github.com/PasteldeSazon/Tche-Musics.git ```
 
-2. Abra a pasta do projeto.
+- E pronto! Voce pode ver o projeto no seu explorador de arquivos 
 
-3. Execute o arquivo `index.html` no navegador.
-4. 
----
+Se quiser pode fazer um fork direto pelo Git Hub
 
-## 💡 Aprendizados
+Se quiser algo mais faci ainda, acesse esse link:
 
-Durante o desenvolvimento deste projeto, foram praticados diversos conceitos importantes, como:
+<https://pasteldesazon.github.io/Site-trabalho-escola/>
 
-* Estruturação com HTML
-* Estilização com CSS
-* Organização de arquivos
-* Publicação com GitHub Pages
-* Manipulação básica com JavaScript
-* Desenvolvimento de interface web
+## Aprendizados
 
----
+O projeto pratica estruturação de páginas HTML, organização de arquivos,
+estilização com CSS, manipulação do DOM, filtros, busca, armazenamento local e
+publicação de um site estático.
 
-## 🔮 Melhorias Futuras
+## Licença
 
-* Melhorar responsividade
-* Adicionar animações
-* Implementar modo escuro
-* Melhorar acessibilidade
-* Adicionar novas páginas e conteúdos
-* Melhorar design visual
+Projeto desenvolvido para fins educacionais.
 
----
-
-## 📄 Licença
-
-Este projeto foi desenvolvido para fins educacionais.
-
----
-
-## 👨‍💻 Autor
+## Autor
 
 Desenvolvido por Gabriel Passos.
