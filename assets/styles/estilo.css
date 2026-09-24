@@ -1,6 +1,6 @@
 /* Estilos gerais para o corpo da página */
 body {
-  background-image: url("/assets/media/imagens/capa-de-fundo-do-arquivo-principal.jpg");
+  background-image: url("../media/imagens/capa-de-fundo-do-arquivo-principal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
