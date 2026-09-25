@@ -495,12 +495,6 @@ audio {
     border-bottom: none; /* Remove borda do último item */
   }
 
-  /* Inverte a direção do conteúdo de música no celular */
-  .conteudo-musica {
-    flex-direction: column-reverse; /* Inverte a ordem no celular */
-    align-items: center;
-  }
-
   /* Expande o cartão de música no celular */
   .card-musica {
     width: 95%; /* Expande o player no celular */

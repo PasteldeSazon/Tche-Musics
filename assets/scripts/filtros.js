@@ -22,6 +22,8 @@ function atualizarLista() {
   });
 
   if (resultado.length === 0) {
+    contador.innerHTML = "<b>Músicas encontradas: </b>0";
+    renderizarMusicas(resultado);
     alert(
       "Ops, parece que a música digitada não existe, por favor, isnsira um nome válido",
     );
@@ -45,10 +47,10 @@ function atualizarLista() {
       resultado.sort((a, b) => b.titulo.localeCompare(a.titulo));
       break;
     case "popularidade-maior":
-      musicas.sort((a, b) => a.popularidade - b.popularidade);
+      resultado.sort((a, b) => b.popularidade - a.popularidade);
       break;
     case "popularidade-menor":
-      musicas.sort((a, b) => b.popularidade - a.popularidade);
+      resultado.sort((a, b) => a.popularidade - b.popularidade);
       break;
   }
 

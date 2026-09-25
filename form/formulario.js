@@ -189,7 +189,7 @@ formPrincipal.addEventListener("submit", (event) => {
     Vai a festivais/rodeios?: ${festival}`);
 
   if (confirmarDados === true) {
-    alert("Dados enviados para meu banco de dados!");
+    alert("Dados validados com sucesso!");
   } else {
     alert(
       "Que pena, então agora você voltará ao fomulário para mudar os dados incorretos",
