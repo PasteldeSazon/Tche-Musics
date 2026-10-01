@@ -281,7 +281,7 @@ audio {
 }
 
 /* Estilos para títulos h3 dentro de cartões */
-.card h3 {
+.card h3, .card h2 {
   margin-top: 15px;
   color: #333333; /* Escuro para legibilidade */
 }
