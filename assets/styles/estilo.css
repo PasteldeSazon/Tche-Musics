@@ -22,7 +22,7 @@ h3 {
 
 /* Estilos para links */
 a {
-  color: #87ceeb; /* Azul claro para links */
+  color: #00b2f9; /* Azul claro para links */
   text-decoration: none;
   font-weight: bold;
 }
@@ -30,19 +30,37 @@ a {
 /* Estilos para itens de lista */
 li {
   font-family: "Arial", sans-serif;
-  color: #f0f0f0; /* Cinza claro */
-
+color: #222222;
   font-size: 18px;
 }
 
 /* Estilos para parágrafos */
 p {
   font-family: "Arial", sans-serif;
-  color: #f0f0f0; /* Cinza claro */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: #222222;
+  text-shadow: none;
   font-size: 18px;
   line-height: 1.6;
   margin: 10px; /* Reduzido para ocupar mais espaço */
+}
+
+.texto-main,
+.letra-centro {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.781);
+  color: #222222;
+  border-radius: 8px;
+}
+
+.texto-main h2,
+.texto-main h3 {
+  color: #333333;
+  text-shadow: none;
+}
+
+.texto-main a {
+  color: #005a9c;
+  text-decoration: underline;
 }
 
 /* Estilos para elementos article */
@@ -56,40 +74,6 @@ button {
   font-weight: bold;
   text-transform: uppercase;
 }
-
-/* .botao-coracao {
-  background: transparent;
-  border: 1px solid transparent;
-  color: #9ca3af;
-  transition: all 0.2s ease;
-}
-
-/* .botao-coracao.favorito {
-  background: rgba(178, 34, 34, 0.12);
-  border-color: #b22222;
-  color: #b22222;
-}
-
-.botao-coracao.favorito svg {
-  fill: #b22222;
-  color: #b22222;
-} */
- /* .botao-coracao.favorito {
-  background-color: #b22222;
-  border-color: #b22222;
-  color: #ffffff;
-}
-
-.botao-coracao.favorito svg {
-  fill: #ffffff;
-  color: #ffffff;
-} */
-
-/* .botao-coracao svg {
-  width: 22px;
-  height: 22px;
-}  */
-
 
 .botao-coracao {
     background: transparent;
@@ -121,10 +105,10 @@ button {
     height: 18px;
 }
 
-.texto-main{
-  align-items: center;
-  margin: 2%;
-  
+.texto-main {
+  max-width: 150ch;
+  margin: 24px auto;
+  padding: 24px;
 }
 
 .texto-main p {
@@ -153,7 +137,6 @@ column-rule: 2px solid #000; /* Linha entre as colunas */
   text-align: left; /* Texto alinhado à esquerda para facilitar a leitura */
   margin: 0 auto; /* Centraliza o bloco na coluna */
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.05); /* Um fundo bem sutil para destacar */
 }
 
 .letra-centro p {
@@ -187,13 +170,18 @@ column-rule: 2px solid #000; /* Linha entre as colunas */
 .card-musica {
   grid-column: 3; /* Joga o player para a terceira coluna */
   justify-self: end; /* Alinha o cartão totalmente à direita da coluna dele */
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(242, 226, 226, 0.9);
   padding: 15px;
   border-radius: 15px;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   margin-right: 20px; /* Margem da borda da tela */
   margin-top: 39px;
+}
+
+.card h3, .card h2 {
+  margin-top: 15px;
+  color: #333333; /* Escuro para legibilidade */
 }
 
 /* Estilos para elementos de áudio */
@@ -426,6 +414,11 @@ audio {
 
 /* Media query para telas menores que 768px (celulares) */
 @media (max-width: 768px) {
+  .texto-main {
+    margin: 12px;
+    padding: 16px;
+  }
+
   #campoBusca,
   #filtro {
     display: block;

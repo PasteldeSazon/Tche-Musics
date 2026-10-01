@@ -32,7 +32,7 @@ function renderizarFavoritos() {
   if (!htmlFavoritos) return;
 
   if (musicasFavoritas.length === 0) {
-    htmlFavoritos.innerHTML = "<p>Nenhuma música favorita salva.</p>";
+    htmlFavoritos.innerHTML = `<div class="texto-main"><p>Nenhuma música favorita salva.</p></div>`;
     return;
   }
 
